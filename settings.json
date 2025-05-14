@@ -1,0 +1,9 @@
+{
+    "recon": {
+        "target_domain": "example.com"
+    },
+    "c2": {
+        "host": "127.0.0.1",
+        "port": 4444
+    }
+}
