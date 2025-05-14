@@ -3,7 +3,7 @@ import json
 import subprocess
 from datetime import datetime
 
-CONFIG_PATH = "config/settings.json"
+CONFIG_PATH = "settings.json"
 
 # -------------------- Setup -------------------- #
 def load_config():
