@@ -37,7 +37,7 @@ RedReaper/
 python3 RedReaper.py
 ```
 
-Modify `config/settings.json` to set:
+Modify `settings.json` to set:
 - Target domain for recon
 - IP and port for C2 callback
 
