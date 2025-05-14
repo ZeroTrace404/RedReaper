@@ -1,5 +1,3 @@
-# RedReaper - Automated Red Team Adversary Simulation Framework
-
 import os
 import json
 import subprocess
