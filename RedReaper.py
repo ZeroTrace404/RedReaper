@@ -23,6 +23,23 @@ def load_config():
     with open(CONFIG_PATH, "r") as f:
         return json.load(f)
 
+# -------------------- Banner -------------------- #
+def banner():
+    print(r"""
+rrrrr  eeeee  ddddd     rrrrr  eeeee  aaaaa  ppppp  eeeee  rrrrr
+r   r  e      d    d    r   r  e      a   a  p   p  e      r   r
+r   r  eeee   d    d    rrrr   eeee   aaaaa  ppppp  eeee   rrrr
+r   r  e      d    d    r  r   e      a   a  p      e      r  r
+r   r  eeeee  ddddd     r  r   eeeee  a   a  p      eeeee  r  r
+""")
+
+# -------------------- Entry Point -------------------- #
+def main():
+    config = load_config()
+    banner()   # <<< wywołanie bannera tutaj
+    run_scenario(config)
+
+
 # -------------------- Recon Module -------------------- #
 def recon(domain):
     print(f"[+] Starting passive reconnaissance on domain: {domain}")
@@ -66,9 +83,4 @@ def run_scenario(config):
     print("\n[+] Simulation complete.")
 
 # -------------------- Entry Point -------------------- #
-def main():
-    config = load_config()
-    run_scenario(config)
-
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__": main()
